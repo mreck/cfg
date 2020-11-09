@@ -1,0 +1,17 @@
+alias ls="ls -hN --color=auto --group-directories-first"
+alias la="ls -a"
+alias l="ls -lah"
+
+alias tarc="tar -czvf"
+alias tarx="tar -xzvf"
+
+alias g="git"
+alias gs="git status"
+alias gd="git diff"
+alias gds="git diff --cached"
+alias ga="git add"
+alias gap="git add -p"
+alias gl="git log"
+alias glom="git log origin/master.."
+alias grom="git rebase origin/master --autostash"
+alias gromi="git rebase origin/master --autostash -i"
