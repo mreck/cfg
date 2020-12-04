@@ -1,0 +1,17 @@
+export EDITOR='vim'
+
+if [ -d "$HOME/.cargo/bin" ] ; then
+	export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+if [ -d "/usr/local/go/bin" ] ; then
+	export PATH="/usr/local/go/bin:$PATH"
+fi
+
+if [ -d "$HOME/.npm-global/bin" ] ; then
+	export PATH="$HOME/.npm-global/bin:$PATH"
+fi
+
+if [ -d "$HOME/bin" ] ; then
+	export PATH="$HOME/bin:$PATH"
+fi
