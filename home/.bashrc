@@ -21,9 +21,9 @@ shopt -s globstar
 
 # colored promt with a red root user
 if [ $(id -u) -eq 0 ]; then
-	export PS1="\e[1;31m\u\e[1;37m@\e[1;34m\h\e[m\e[1;37m:\e[1;33m\w\e[m \e[1;36m$\e[m "
+	export PS1="\[\e[31m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\w$ "
 else
-	export PS1="\e[1;32m\u\e[1;37m@\e[1;34m\h\e[m\e[1;37m:\e[1;33m\w\e[m \e[1;36m$\e[m "
+	export PS1="\[\e[32m\]\u\[\e[m\]@\[\e[36m\]\h\[\e[m\]:\w$ "
 fi
 
 # colored GCC warnings and errors
