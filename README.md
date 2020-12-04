@@ -3,5 +3,5 @@
 load basic files:
 
 ```sh
-wget -O - https://raw.githubusercontent.com/mreck/cfg/main/setup-basic.sh | sh
+wget -O - https://raw.githubusercontent.com/mreck/cfg/master/setup-basic.sh | sh
 ```
