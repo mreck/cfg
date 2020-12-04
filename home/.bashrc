@@ -35,6 +35,9 @@ export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quo
 # load environment
 [ -f ~/.environmentrc ] && source ~/.environmentrc
 
+# start tmux
+[ $TERM != 'screen' ] && [ -x "$(which tmux)" ] && exec tmux
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
