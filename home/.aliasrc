@@ -15,3 +15,9 @@ alias gl="git log"
 alias glom="git log origin/master.."
 alias grom="git rebase origin/master --autostash"
 alias gromi="git rebase origin/master --autostash -i"
+
+alias aptup="sudo apt update && sudo apt upgrade -y && sudo apt autoremove -y"
+
+alias pSyu="sudo pacman -Syu"
+alias pS="sudo pacman -S"
+alias pSs="pacman -Ss"
