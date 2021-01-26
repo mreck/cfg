@@ -1,3 +1,4 @@
+alias cd..="cd .."
 alias ls="ls -hN --color=auto --group-directories-first"
 alias la="ls -a"
 alias l="ls -lah"
