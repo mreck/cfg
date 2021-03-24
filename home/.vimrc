@@ -3,6 +3,31 @@ map <space> <leader>
 " necessary for lots of cool stuff
 set nocompatible
 
+call plug#begin('~/.vim/plugged')
+Plug 'w0rp/ale'
+Plug 'itchyny/lightline.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'digitaltoad/vim-pug'
+call plug#end()
+
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+let g:ale_sign_column_always = 1
+let g:ale_set_highlights = 0
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+let g:ale_fixers = { 'javascript': ['eslint'] }
+let g:ale_fix_on_save = 1
+
+highlight clear SignColumn
+highlight SignColumn ctermbg=black
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+highlight GitGutterChangeDelete ctermfg=yellow
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 " disable arrow keys (use home row!)
 nnoremap <left>  :echoe "Use h"<CR>
 nnoremap <right> :echoe "Use l"<CR>
@@ -10,7 +35,7 @@ nnoremap <up>    :echoe "Use k"<CR>
 nnoremap <down>  :echoe "Use j"<CR>
 
 " left and right can switch buffers
-nnoremap <left> :bp<CR>
+nnoremap <left>  :bp<CR>
 nnoremap <right> :bn<CR>
 
 " move by line (relevant when wrapping)
